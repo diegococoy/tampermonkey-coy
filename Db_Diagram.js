@@ -7,7 +7,7 @@
 // @match        https://dbdiagram.io/*
 // @icon         https://cdn.holistics.io/logo-dbdiagram-notext.ico
 // @grant        GM_addStyle
-// @homepage     https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Db_Diagram.js
+// @homepage     https://github.com/diegococoy/tampermonkey-coy/blob/main/README.md
 // @updateURL    https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Db_Diagram.js
 // @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Db_Diagram.js
 // ==/UserScript==

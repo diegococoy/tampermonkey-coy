@@ -12,7 +12,7 @@
 // @require      https://code.jquery.com/ui/1.12.1/jquery-ui.js
 // @icon         http://192.168.100.74:32400/web/favicon.ico
 // @grant        GM_addStyle
-// @homepage     https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Plex.js
+// @homepage     https://github.com/diegococoy/tampermonkey-coy/blob/main/README.md
 // @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Plex.js
 // @updateURL    https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Plex.js
 // ==/UserScript==

@@ -21,3 +21,11 @@ Scripts de diego
 # The Movie DataBase TMDB
 
 [![Instalar](https://img.shields.io/badge/Instalar-37a779?style=for-the-badge&logo=javascript&logoColor=f5f5f5)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/The_Movie_DataBase_TMDB.js)
+
+# SRI
+
+[![Instalar](https://img.shields.io/badge/Instalar-37a779?style=for-the-badge&logo=javascript&logoColor=f5f5f5)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Sri.js)
+
+# AVAC
+
+[![Instalar](https://img.shields.io/badge/Instalar-37a779?style=for-the-badge&logo=javascript&logoColor=f5f5f5)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Avac.js)

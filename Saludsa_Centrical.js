@@ -11,7 +11,7 @@
 // @match        https://saludsa.centrical.me/w/game/missions/3306
 // @icon         https://centrical.com/wp-content/themes/centrical-master/assets/img/favicon/favicon-32x32.png
 // @grant        GM_addStyle
-// @homepage     https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Saludsa_Centrical.js
+// @homepage     https://github.com/diegococoy/tampermonkey-coy/blob/main/README.md
 // @updateURL    https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Saludsa_Centrical.js
 // @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Saludsa_Centrical.js
 // ==/UserScript==
