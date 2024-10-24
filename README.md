@@ -22,6 +22,38 @@ Scripts de diego
 
 <button name="button" onclick="https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/The_Movie_DataBase_TMDB.js">Instalar</button>
 
-[Click me](http://www.google.com){: .btn{ boder: 1px solid red;}}
+<style>
+mark{
+    color:red;
+    background-color: blue;
+}
+</style>
 
-{% include button.html button_name="My Button" button_class="primary" %}
+<mark>what is DataBase</mark>
+
+<br>
+[![Instalar]][Link](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/The_Movie_DataBase_TMDB.js)
+<br>
+
+asdasd
+
+<br>
+
+[![Instalar](https://gist.github.com/cxmeel/0dbc95191f239b631c3874f4ccf114e2/raw/github_sponsor-compact.svg)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Plex.js)
+<br>
+
+Heading Identifiers:
+
+### Red text title {#identifier .red}
+
+Fenced Code Attributes:
+{.red .numberLines startFrom="1"}
+
+Inline Code Attributes:
+`red text`{.red}
+
+Bracketed Spans:
+[This is *some red text*]{.red}
+
+Link Attributes:
+![alt text](the.jpg){.center}
