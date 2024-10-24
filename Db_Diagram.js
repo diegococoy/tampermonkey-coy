@@ -1,19 +1,15 @@
 // ==UserScript==
-// @name         Saludsa Centrical
-// @namespace    minigames.gameffective.me
-// @version      0.3
-// @description  Permite manipular los puzzle
+// @name         dbdiagram.io
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  Quita publicidad
 // @author       Diego Cabezas Coy
-// @match        http://minigames.gameffective.me/*
-// @match        https://minigames.gameffective.me/*
-// @match        http://minigames.centrical.me/*
-// @match        https://minigames.centrical.me/*
-// @match        https://saludsa.centrical.me/w/game/missions/3306
-// @icon         https://centrical.com/wp-content/themes/centrical-master/assets/img/favicon/favicon-32x32.png
+// @match        https://dbdiagram.io/*
+// @icon         https://cdn.holistics.io/logo-dbdiagram-notext.ico
 // @grant        GM_addStyle
-// @homepage     https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Saludsa_Centrical.js
-// @updateURL    https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Saludsa_Centrical.js
-// @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Saludsa_Centrical.js
+// @homepage     https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Db_Diagram.js
+// @updateURL    https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Db_Diagram.js
+// @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Db_Diagram.js
 // ==/UserScript==
 
 // 2024-10-16
