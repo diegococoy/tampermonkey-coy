@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         The Movie DataBase TMDB
 // @namespace    themoviedb
-// @version      0.9
+// @version      1.2
 // @description  Agrega un boton para abrir las portadas
 // @author       Diego Cabezas Coy
 // @match        https://www.themoviedb.org/movie/*
