@@ -23,3 +23,5 @@ Scripts de diego
 <button name="button" onclick="https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/The_Movie_DataBase_TMDB.js">Instalar</button>
 
 [Click me](http://www.google.com){: .btn{ boder: 1px solid red;}}
+
+{% include button.html button_name="My Button" button_class="primary" %}
