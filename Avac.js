@@ -1,21 +1,21 @@
 // ==UserScript==
 // @name         AVAC
 // @namespace    AVAC
-// @version      1.0
+// @version      1.1
 // @description
 // @author       Diego Cabezas Coy
-// @match        https://avac.ups.edu.ec/*
-// @match        https://avac.ups.edu.ec/posgrados/course/view.php?id=*
-// @match        https://avac.ups.edu.ec/posgrados/mod/quiz/view.php?id=*
 // @icon
 // @grant        GM_addStyle
 // @homepage     https://github.com/diegococoy/tampermonkey-coy/blob/main/README.md
 // @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Avac.js
 // @updateURL    https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Avac.js
+// @match        https://avac.ups.edu.ec/*
+// @match        https://avac.ups.edu.ec/posgrados/course/view.php?id=*
+// @match        https://avac.ups.edu.ec/posgrados/mod/quiz/view.php?id=*
 // ==/UserScript==
 
 // ==========
-// 2023-01-01
+// 2025-01-17
 // ==========
 
 (function () {

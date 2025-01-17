@@ -1,22 +1,24 @@
 // ==UserScript==
 // @name         Saludsa Centrical
 // @namespace    minigames.gameffective.me
-// @version      0.3
+// @version      0.4
 // @description  Permite manipular los puzzle
 // @author       Diego Cabezas Coy
-// @match        http://minigames.gameffective.me/*
-// @match        https://minigames.gameffective.me/*
-// @match        http://minigames.centrical.me/*
-// @match        https://minigames.centrical.me/*
-// @match        https://saludsa.centrical.me/w/game/missions/3306
 // @icon         https://centrical.com/wp-content/themes/centrical-master/assets/img/favicon/favicon-32x32.png
 // @grant        GM_addStyle
 // @homepage     https://github.com/diegococoy/tampermonkey-coy/blob/main/README.md
 // @updateURL    https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Saludsa_Centrical.js
 // @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Saludsa_Centrical.js
+// @match        http://minigames.gameffective.me/*
+// @match        https://minigames.gameffective.me/*
+// @match        http://minigames.centrical.me/*
+// @match        https://minigames.centrical.me/*
+// @match        https://saludsa.centrical.me/w/game/missions/3306
 // ==/UserScript==
 
-// 2024-10-16
+// ==========
+// 2025-01-17
+// ==========
 
 (function () {
   const css = `

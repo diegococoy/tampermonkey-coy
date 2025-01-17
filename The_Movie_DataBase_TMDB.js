@@ -1,20 +1,20 @@
 // ==UserScript==
 // @name         The Movie DataBase TMDB
 // @namespace    themoviedb
-// @version      1.2
+// @version      1.3
 // @description  Agrega un boton para abrir las portadas
 // @author       Diego Cabezas Coy
-// @match        https://www.themoviedb.org/movie/*
-// @match        https://www.themoviedb.org/tv/*
 // @icon         https://www.themoviedb.org/assets/2/favicon-32x32-543a21832c8931d3494a68881f6afcafc58e96c5d324345377f3197a37b367b5.png
 // @grant        GM_addStyle
 // @homepage     https://github.com/diegococoy/tampermonkey-coy/blob/main/README.md
 // @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/The_Movie_DataBase_TMDB.js
 // @updateURL    https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/The_Movie_DataBase_TMDB.js
+// @match        https://www.themoviedb.org/movie/*
+// @match        https://www.themoviedb.org/tv/*
 // ==/UserScript==
 
 // ==========
-// 2024-10-17
+// 2025-01-17
 // ==========
 
 (function () {

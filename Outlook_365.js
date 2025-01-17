@@ -1,9 +1,14 @@
 // ==UserScript==
 // @name         Outlook 365
 // @namespace    outlook
-// @version      3.6
+// @version      3.7
 // @description  Agrega un boton para abrir las portadas
 // @author       Diego Cabezas Coy
+// @icon         https://outlook-1.cdn.office.net/assets/mail/pwa/v1/pngs/apple-touch-icon.png
+// @grant        GM_addStyle
+// @homepage     https://github.com/diegococoy/tampermonkey-coy/blob/main/README.md
+// @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Outlook_365.js
+// @updateURL    https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Outlook_365.js
 // @match        http://*.mail.live.com/*
 // @match        https://*.mail.live.com/*
 // @match        http://mail.live.com/*
@@ -11,15 +16,10 @@
 // @match        https://snt153.mail.live.com/*
 // @match        http://outlook.live.com/*
 // @match        https://outlook.live.com/*
-// @icon         https://outlook-1.cdn.office.net/assets/mail/pwa/v1/pngs/apple-touch-icon.png
-// @grant        GM_addStyle
-// @homepage     https://github.com/diegococoy/tampermonkey-coy/blob/main/README.md
-// @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Outlook_365.js
-// @updateURL    https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Outlook_365.js
 // ==/UserScript==
 
 // ==========
-// 2022-11-18
+// 2025-01-17
 // ==========
 
 (function () {
