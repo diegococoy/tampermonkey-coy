@@ -12,8 +12,10 @@
 // @match        https://acortados.com/*
 // ==/UserScript==
 
+/* globals jQuery, $, main_site, DYykkzwP, api_key */
+
 // ==========
-// 2025-01-17
+// 2025-01-24
 // ==========
 
 (function () {
@@ -34,19 +36,9 @@
 
   var url = f(atob(main_site)) + "/r.php?f=" + DYykkzwP + "&t=" + api_key;
 
-  //Clipboard(url);
-
-  function Clipboard(text) {
-    const a = document.querySelector(".main");
-
-    navigator.clipboard.writeText(text);
-    console.log(text);
-    alert(text);
-
-    var btn = CreateButton("Abrir", text);
-    //a.appendChild(btn);
-    a.prepend(btn);
-  }
+  const main = document.querySelector(".main");
+  var btn = CreateButton("Abrir", url);
+  main.prepend(btn);
 
   function CreateButton(nombre, url) {
     var btn = document.createElement("input");
