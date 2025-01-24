@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PelisHD
 // @namespace    acortados
-// @version      0.1
+// @version      0.2
 // @description  Acortador
 // @author       Diego Cabezas Coy
 // @icon         https://acortados.com/assets/img/icon.png
