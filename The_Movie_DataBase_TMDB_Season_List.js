@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         The Movie DataBase TMDB Season List
 // @namespace    themoviedblist
-// @version      0.3
+// @version      0.4
 // @description	 Agrega un boton para abrir las portadas
 // @author       Diego Cabezas Coy
 // @icon         https://www.themoviedb.org/assets/2/favicon-32x32-543a21832c8931d3494a68881f6afcafc58e96c5d324345377f3197a37b367b5.png
@@ -48,6 +48,8 @@
       var name = a.innerText;
 
       name = name.replace(":", "");
+      name = name.replace("¿", "");
+      name = name.replace("?", "");
 
       var season = a.getAttribute("data-season-number") + "";
       season = season.padStart(2, "0");
