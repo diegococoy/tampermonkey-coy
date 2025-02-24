@@ -4,7 +4,7 @@ Scripts de diego
 
 # Plex
 
-[![Instalar](https://img.shields.io/badge/Instalar-37a779?style=for-the-badge&logo=javascript&logoColor=f5f5f5)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Plex.js)
+[![Instalar v2.1](https://img.shields.io/badge/Instalar-37a779?style=for-the-badge&logo=javascript&logoColor=f5f5f5)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Plex.js)
 
 # dbdiagram.io
 
@@ -16,11 +16,15 @@ Scripts de diego
 
 # Centrical
 
-[![Instalar](https://img.shields.io/badge/Instalar-37a779?style=for-the-badge&logo=javascript&logoColor=f5f5f5)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Saludsa_Centrical.js)
+[![Instalar v0.4](https://img.shields.io/badge/Instalar-37a779?style=for-the-badge&logo=javascript&logoColor=f5f5f5)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/Saludsa_Centrical.js)
 
 # The Movie DataBase TMDB
 
-[![Instalar](https://img.shields.io/badge/Instalar-37a779?style=for-the-badge&logo=javascript&logoColor=f5f5f5)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/The_Movie_DataBase_TMDB.js)
+[![Instalar v1.3](https://img.shields.io/badge/Instalar-37a779?style=for-the-badge&logo=javascript&logoColor=f5f5f5)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/The_Movie_DataBase_TMDB.js)
+
+# The Movie DataBase TMDB Season List
+
+[![Instalar v0.3](https://img.shields.io/badge/Instalar-37a779?style=for-the-badge&logo=javascript&logoColor=f5f5f5)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/The_Movie_DataBase_TMDB_Season_List.js)
 
 # SRI
 
