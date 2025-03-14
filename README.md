@@ -1,3 +1,5 @@
+markdown: kramdown
+
 # tampermonkey-coy
 
 Scripts de diego
@@ -38,5 +40,18 @@ Scripts de diego
 
 [![Instalar](https://img.shields.io/badge/Instalar-37a779?style=for-the-badge&logo=javascript&logoColor=f5f5f5)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/PelisHD.js){:target='\_blank'}
 
-[link](URL){:target='\_blank'}
-[Hello, world!](http://example.com/){target="\_blank"}
+[Google](https://google.com target="\_blank")
+
+[Google](https://google.com)
+
+[1]: http://somelink.com/?target=_blank
+
+aa
+[Go to this page](http://somelink.com/?target=_blank)
+[Link](https://example.org/ "title" target="\_blank")
+[Link in new Tab](https://example.org?target=_blank)
+
+[My link](/path/to/page?param1=value1&target=_blank)
+[soporte de Google](https://support.google.com/chrome/answer/95647?hl=es&ref_topic=3421433%3F&=_blank)
+
+[my-link]: http://google.com
