@@ -55,3 +55,11 @@ aa
 [soporte de Google](https://support.google.com/chrome/answer/95647?hl=es&ref_topic=3421433%3F&=_blank)
 
 [my-link]: http://google.com
+
+---
+
+Live Demo: [demo](https://example.com){:target="\_blank"} //kramdown
+
+Live Demo: [demo](https://example.com){target="\_blank"} //markdown
+
+Live Demo: <a href="https://example.com" target="_blank">demo</a> //html
