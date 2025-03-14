@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PelisHD
 // @namespace    acortados
-// @version      0.2
+// @version      0.3
 // @description  Acortador
 // @author       Diego Cabezas Coy
 // @icon         https://acortados.com/assets/img/icon.png
@@ -10,12 +10,13 @@
 // @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/PelisHD.js
 // @updateURL    https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/PelisHD.js
 // @match        https://acortados.com/*
+// @match        https://tulink.org/*
 // ==/UserScript==
 
 /* globals jQuery, $, main_site, DYykkzwP, api_key */
 
 // ==========
-// 2025-01-24
+// 2025-03-14
 // ==========
 
 (function () {
@@ -46,11 +47,11 @@
     btn.setAttribute("class", "button button-purple green");
     btn.setAttribute("name", nombre);
     btn.setAttribute("value", nombre);
-    btn.addEventListener("click", () => click(url));
+    btn.addEventListener("click", () => Click(url));
     return btn;
   }
 
-  function click(url) {
+  function Click(url) {
     window.open(url, "_blank");
   }
 })();
