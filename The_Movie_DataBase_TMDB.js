@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         The Movie DataBase TMDB
 // @namespace    themoviedb
-// @version      1.3
+// @version      1.4
 // @description  Agrega un boton para abrir las portadas
 // @author       Diego Cabezas Coy
 // @icon         https://www.themoviedb.org/assets/2/favicon-32x32-543a21832c8931d3494a68881f6afcafc58e96c5d324345377f3197a37b367b5.png
@@ -14,7 +14,7 @@
 // ==/UserScript==
 
 // ==========
-// 2025-01-17
+// 2025-03-28
 // ==========
 
 (function () {
