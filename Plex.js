@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Plex
 // @namespace    Plex
-// @version      2.2
+// @version      2.2.1
 // @description  Permite mover el panel en editar
 // @author       Diego Cabezas Coy
 // @icon         http://192.168.100.74:32400/web/favicon.ico
@@ -49,7 +49,6 @@
       if (typeof mutation.addedNodes == "object") {
         mutation.addedNodes.forEach((node) => {
           if (node.className === "modal-dialog") {
-            console.log("  " + node.firstElementChild.className);
             $("div.modal-content").draggable({
               handle: "h4",
             });
@@ -57,7 +56,6 @@
           }
 
           if (node.className.includes("match-modal")) {
-            console.log("  " + node.firstElementChild.firstElementChild.className);
             $("div.modal-content").draggable({
               handle: "h4",
             });
@@ -68,7 +66,7 @@
     });
   }
 
-  /*
+  /* Version anterior a firefox 139.0
   $("body").on("DOMNodeInserted", function (e) {
     if (e.target.className == "modal-dialog") {
       $("div." + e.target.firstElementChild.className).draggable({
