@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Plex
 // @namespace    Plex
-// @version      2.1
+// @version      2.2
 // @description  Permite mover el panel en editar
 // @author       Diego Cabezas Coy
 // @icon         http://192.168.100.74:32400/web/favicon.ico
@@ -20,7 +20,7 @@
 /* globals jQuery, $, waitForKeyElements */
 
 // ==========
-// 2025-01-17
+// 2025-06-27
 // ==========
 
 (function () {
@@ -31,6 +31,44 @@
 
   GM_addStyle(css);
 
+  var targetNodes = $("body");
+
+  var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+  var myObserver = new MutationObserver(mutationHandler);
+  var obsConfig = {
+    childList: true,
+    subtree: true,
+  };
+
+  targetNodes.each(function () {
+    myObserver.observe(this, obsConfig);
+  });
+
+  function mutationHandler(mutationRecords) {
+    mutationRecords.forEach(function (mutation) {
+      if (typeof mutation.addedNodes == "object") {
+        mutation.addedNodes.forEach((node) => {
+          if (node.className === "modal-dialog") {
+            console.log("  " + node.firstElementChild.className);
+            $("div.modal-content").draggable({
+              handle: "h4",
+            });
+            copyToClipboard();
+          }
+
+          if (node.className.includes("match-modal")) {
+            console.log("  " + node.firstElementChild.firstElementChild.className);
+            $("div.modal-content").draggable({
+              handle: "h4",
+            });
+            copyToClipboard();
+          }
+        });
+      }
+    });
+  }
+
+  /*
   $("body").on("DOMNodeInserted", function (e) {
     if (e.target.className == "modal-dialog") {
       $("div." + e.target.firstElementChild.className).draggable({
@@ -45,7 +83,7 @@
       });
       copyToClipboard();
     }
-  });
+  });*/
 
   function copyToClipboard() {
     $(".media-info-file-list.well").on("click", "li", function () {
