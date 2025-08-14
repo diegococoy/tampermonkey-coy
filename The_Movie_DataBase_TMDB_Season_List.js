@@ -52,6 +52,9 @@
       name = name.replace(":", "");
       name = name.replace("¿", "");
       name = name.replace("?", "");
+      name = name.replace("  ", "");
+      name = name.replace("..", ".");
+      name = name.trim();
 
       var season = a.getAttribute("data-season-number") + "";
       season = season.padStart(2, "0");
