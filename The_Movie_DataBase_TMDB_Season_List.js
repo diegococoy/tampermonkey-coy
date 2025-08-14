@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         The Movie DataBase TMDB Season List
 // @namespace    themoviedblist
-// @version      0.5
+// @version      0.6
 // @description	 Agrega un boton para abrir las portadas
 // @author       Diego Cabezas Coy
 // @icon         https://www.themoviedb.org/assets/2/favicon-32x32-543a21832c8931d3494a68881f6afcafc58e96c5d324345377f3197a37b367b5.png
@@ -15,7 +15,7 @@
 // ==/UserScript==
 
 // ==========
-// 2025-08-07
+// 2025-08-14
 // ==========
 
 (function () {
@@ -59,13 +59,18 @@
       var episode = a.getAttribute("data-episode-number") + "";
       episode = episode.padStart(no, "0");
 
-      let line = "S" + season + "E" + episode + "\t" + name + "\tS" + season + "E" + episode + " " + name;
+      //let line = "S" + season + "E" + episode + "\t" + name + "\tS" + season + "E" + episode + " " + name;
+      let line = season + "E" + episode + " " + name;
+
       console.log(line);
+
       lista = lista + line + "\n";
     });
 
-    GM_setClipboard(lista, "text", () => console.log("Clipboard set!"));
+    var msg = "Texto copiado!";
 
-    alert("Copiado");
+    GM_setClipboard(lista, "text", () => console.log(msg));
+
+    alert(msg);
   }
 })();
