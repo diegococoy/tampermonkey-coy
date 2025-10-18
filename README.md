@@ -39,3 +39,5 @@ Scripts de diego
 # Pelis HD
 
 [![Instalar](https://img.shields.io/badge/Instalar-37a779?style=for-the-badge&logo=javascript&logoColor=f5f5f5)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/PelisHD.js)
+
+[![Instalar](https://img.shields.io/badge/Instalar-37a779?style=for-the-badge&logo=javascript&logoColor=f5f5f5)](https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/PelisHD_Title.js)
