@@ -1,26 +1,34 @@
 // ==UserScript==
 // @name         The Movie DataBase TMDB Title
 // @namespace    themoviedbtitle
-// @version      0.1
+// @version      0.2
 // @description	 Genera y copia el titulo de la pelicula o serie
 // @author       Diego Cabezas Coy
-// @icon         https://www.themoviedb.org/assets/2/favicon-32x32-543a21832c8931d3494a68881f6afcafc58e96c5d324345377f3197a37b367b5.png
+// @icon         https://pelisenhd.org/wp-content/uploads/2023/09/logo.png
 // @grant        GM_addStyle
 // @grant        GM_setClipboard
 // @homepage     https://github.com/diegococoy/tampermonkey-coy/blob/main/README.md
-// @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/The_Movie_DataBase_TMDB_Title.js
-// @updateURL    https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/The_Movie_DataBase_TMDB_Title.js
+// @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/PelisHD_Title.js
+// @updateURL    https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/PelisHD_Title.js
 // @match        https://pelisenhd.org/pelicula*/*
 // @match        https://pelisenhd.org/series-tv*/*
 // ==/UserScript==
 
 // ==========
-// 2025-09-05
+// 2025-10-18
 // ==========
 
 (function () {
   "use strict";
-  const css = `
+  const css = `.btncoy {
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px 10px;
+    min-width: 150px;
+    background-color: rgb(24 32 49 / 50%);
+    color: white;
+    font-size: 16px;
+  }
         `;
 
   GM_addStyle(css);
@@ -28,12 +36,17 @@
   var esMovie = include(window.location.href, "/pelicula");
   var esShow = include(window.location.href, "/series-tv");
 
+  var titulo = "";
+
   //Si es pelicula o serie
   if (esMovie || esShow) {
     var detailsTitle = document.querySelector(".details__title");
 
     var tituloEs = detailsTitle.querySelector("h1").textContent;
     var tituloEn = detailsTitle.querySelector("small").textContent;
+
+    detailsTitle.prepend(CreateButton("Copy Title"));
+
     var resto = "";
 
     if (include(tituloEs, tituloEn)) {
@@ -71,22 +84,26 @@
         console.log(idioma);
         */
 
-    var titulo = "";
+    titulo = "";
     if (esMovie) {
-      titulo = `${tituloEs} ${tituloEn} (${anio}) ${calidad} ${formato} ${idioma} BB`.replace("  ", " ").trim();
+      titulo = `${tituloEs} ${tituloEn} (${anio}) ${calidad} ${formato} ${idioma} BB`.replaceAll("  ", " ").trim();
     }
 
     if (esShow) {
-      titulo = `${tituloEn} (${anio}) ${tituloEs} Season ## [] ${calidad} ${formato} ${idioma} BB`.replace("  ", " ").trim();
+      titulo = `${tituloEn} (${anio}) ${tituloEs} Season ## [] ${calidad} ${formato} ${idioma} BB`.replaceAll("  ", " ").trim();
     }
+
+    titulo = titulo.replaceAll(":", " ").trim();
+    titulo = titulo.replaceAll(",", " ").trim();
+    titulo = titulo.replaceAll("_", " ").trim();
+    titulo = titulo.replaceAll("¿", " ").trim();
+    titulo = titulo.replaceAll("?", " ").trim();
+    titulo = titulo.replaceAll("!", " ").trim();
+    titulo = titulo.replaceAll("  ", " ").trim();
 
     //console.log(titulo);
 
-    var msg = `${msg} ${titulo}`;
-    GM_setClipboard(titulo, "Title", () => {
-      alert(msg);
-      console.log(msg);
-    });
+    Copy();
   }
 
   function include(source, text) {
@@ -177,5 +194,23 @@
     }
 
     return idioma;
+  }
+
+  function CreateButton(nombre) {
+    var btn = document.createElement("input");
+    btn.setAttribute("type", "button");
+    btn.setAttribute("class", "header__sign-in btncoy");
+    btn.setAttribute("name", nombre);
+    btn.setAttribute("value", nombre);
+    btn.addEventListener("click", () => Copy());
+    return btn;
+  }
+
+  function Copy() {
+    var msg = `Título: ${titulo}`;
+    GM_setClipboard(titulo, "Title", () => {
+      alert(msg);
+      console.log(msg);
+    });
   }
 })();

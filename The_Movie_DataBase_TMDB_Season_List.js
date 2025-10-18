@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         The Movie DataBase TMDB Season List
 // @namespace    themoviedblist
-// @version      0.7
-// @description	 Agrega un boton para abrir las portadas
+// @version      0.8
+// @description	 Permite copiar el listado de capítulos
 // @author       Diego Cabezas Coy
 // @icon         https://www.themoviedb.org/assets/2/favicon-32x32-543a21832c8931d3494a68881f6afcafc58e96c5d324345377f3197a37b367b5.png
 // @grant        GM_addStyle
@@ -15,7 +15,7 @@
 // ==/UserScript==
 
 // ==========
-// 2025-08-17
+// 2025-10-18
 // ==========
 
 (function () {
