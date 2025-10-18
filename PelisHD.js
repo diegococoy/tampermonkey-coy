@@ -4,7 +4,7 @@
 // @version      0.3
 // @description  Acortador
 // @author       Diego Cabezas Coy
-// @icon         https://acortados.com/assets/img/icon.png
+// @icon         https://pelisenhd.org/wp-content/uploads/2023/09/logo.png
 // @grant        GM_addStyle
 // @homepage     https://github.com/diegococoy/tampermonkey-coy/blob/main/README.md
 // @downloadURL  https://raw.githubusercontent.com/diegococoy/tampermonkey-coy/refs/heads/main/PelisHD.js

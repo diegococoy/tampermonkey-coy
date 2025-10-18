@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         The Movie DataBase TMDB Title
+// @name         PelisHD Title
 // @namespace    themoviedbtitle
 // @version      0.2
 // @description	 Genera y copia el titulo de la pelicula o serie
