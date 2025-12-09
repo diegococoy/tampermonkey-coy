@@ -29,6 +29,8 @@
 
   var esImages = window.location.href.indexOf("/images/") >= 0;
 
+  var lista = "";
+
   //Si es season y no tiene images en la url
   if (esSeason && !esImages) {
     var tags = document.querySelectorAll(".episode_title");
@@ -41,21 +43,13 @@
       no = no + 1;
     }
 
-    console.log(no);
-
-    var lista = "";
+    //console.log(no);
 
     episodes.forEach((ep) => {
       var a = ep.querySelector(".no_click");
       var name = a.innerText;
 
-      name = name.replace(":", "");
-      name = name.replace("¿", "");
-      name = name.replace("?", "");
-      name = name.replace("/", "_");
-      name = name.replace("  ", "");
-      name = name.replace("..", ".");
-      name = name.trim();
+      name = cleanText(name);
 
       var season = a.getAttribute("data-season-number") + "";
       season = season.padStart(2, "0");
@@ -66,15 +60,44 @@
       //let line = "S" + season + "E" + episode + "\t" + name + "\tS" + season + "E" + episode + " " + name;
       let line = "S" + season + "E" + episode + " " + name;
 
-      console.log(line);
+      //console.log(line);
 
       lista = lista + line + "\n";
     });
 
-    var msg = "Texto copiado!";
+    var h2 = document.querySelector(".title.ott_true");
 
-    GM_setClipboard(lista, "text", () => console.log(msg));
+    h2.append(CreateButton("Copiar", lista));
 
-    alert(msg);
+    //Copy("Copiado", lista);
+  }
+
+  function CreateButton(nombre, texto) {
+    var btn = document.createElement("input");
+    btn.setAttribute("type", "button");
+    btn.setAttribute("class", "rounded btncoy");
+    btn.setAttribute("name", nombre);
+    btn.setAttribute("value", nombre);
+    btn.addEventListener("click", () => Copy("Copiado", texto));
+    return btn;
+  }
+
+  function cleanText(texto) {
+    texto = texto.replaceAll(":", " ").trim();
+    texto = texto.replaceAll(",", " ").trim();
+    texto = texto.replaceAll("_", " ").trim();
+    texto = texto.replaceAll("¿", " ").trim();
+    texto = texto.replaceAll("?", " ").trim();
+    texto = texto.replaceAll("!", " ").trim();
+    texto = texto.replaceAll("  ", " ").trim();
+
+    return texto;
+  }
+
+  function Copy(msg, texto) {
+    GM_setClipboard(texto, "text", () => {
+      alert(msg);
+      console.log(msg);
+    });
   }
 })();
